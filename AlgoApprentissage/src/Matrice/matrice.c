@@ -3,6 +3,7 @@
 #include <math.h>
 #include <stdio.h>
 #include <time.h>
+#include <stdarg.h>
 #include "matrice.h"
 #include "../Aleatoire/aleatoire.h"
 
@@ -87,6 +88,18 @@ void SetValeurVecteur(double valeur, Vecteur_t V, int i) {
 	*(V.V + i) = valeur;
 }
 
+void SetValeursVecteur(Vecteur_t v, double nbValeurs, ...) {
+	va_list liste;
+	va_start(liste, nbValeurs);
+	int cpt = 0;
+	while (nbValeurs > 0 && cpt < v.n) {
+		double valeur = va_arg(liste, double);
+		SetValeurVecteur(valeur, v, cpt);
+		cpt++;
+		nbValeurs--;
+	}
+	va_end(liste);
+}
 
 
 void RemplirMatriceAleatoire(Matrice_t M, double borneInf, double borneSup) {

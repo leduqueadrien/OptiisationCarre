@@ -114,6 +114,12 @@ void SetValeurMatrice(double, Matrice_t, int, int);
 /* -------------------------------------------------------------------------- */
 void SetValeurVecteur(double, Vecteur_t, int);
 
+/* -------------------------------------------------------------------------- */
+/* SetValeurVecteur : Rempli le vecteur avec les valeurs rentre en parametre  */
+/* Entree : double valeurs : premiere valeur a rentrer (obligatoire)		  */
+/* Sortie : void															  */
+/* -------------------------------------------------------------------------- */
+void SetValeursVecteur(Vecteur_t, double, ...);
 
 /* -------------------------------------------------------------------------- */
 /* RemplirMatriceAleatoire : Remplit la matrice avec des valeurs aleatoires	  */
