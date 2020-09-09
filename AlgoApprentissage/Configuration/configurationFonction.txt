@@ -1,0 +1,10 @@
+# Configuration de la fonction
+# Parametre de la fonction de la forme :
+# <nombre de case minimum>
+# <nombre de case maximum>
+# <taille des cotes de la fenetre minimum>
+# <taille des cotes de la fenetre maximum>
+1
+100
+100
+1000

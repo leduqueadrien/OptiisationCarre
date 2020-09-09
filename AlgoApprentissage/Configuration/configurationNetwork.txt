@@ -1,0 +1,18 @@
+# Configuration du reseau neuronal de type régression
+# Parametre du reseau de la forme :
+# <taille du vecteur en entree> entier
+# <taille du vecteur en sortie> entier
+# <nombre de couche cachee> entier
+3
+1
+1
+# Configuration des couches 
+# Parametre des couches de la forme :
+# -<numero de la couche>
+# <taille du vecteur d'entree> entier
+# <taille du vecteur de sortie> entier
+# <nom de la fonction d'activation> "sigmoide" ou "identite"
+-1
+3
+2
+identite
